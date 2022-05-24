@@ -1,1 +1,210 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rednecks M.C.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font: 16px "Noto Serif", "sans-serif", arial;
+      background: url('static/images/pattern.jpg') repeat #F3F4F4;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Arvo", Helvetica, sans-serif;
+    }
+    h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #e82626;
+      margin-bottom: 2.5rem;
+    }
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 1.25rem;
+      line-height: 26px;
+    }
+    #header {
+      height: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+    }
+    #header .logo {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all ease 500ms;
+    }
+    #header .logo:hover {
+      transform: translateX(-50%) rotate(-10deg) scale(1.1);
+    }
+    #footer {
+      color: #707070;
+      text-align: center;
+      padding: 40px 0;
+    }
+    #footer p {
+      margin-bottom: 0;
+    }
+    .mw-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .pitch {
+      color: #fff;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: url("static/images/pitch.png") no-repeat center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .pitch .mw-container {
+      flex: 1;
+    }
+    .pitch p {
+      line-height: 1;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 3.625rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .pitch h1 {
+      padding: 10px 20px;
+      font-size: 3.625rem;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .pitch h1 span {
+      color: #e82626;
+    }
+    .separator {
+      background: url("static/images/separator.png") center center no-repeat;
+      height: 56px;
+      margin-bottom: 30px;
+    }
+    .our-history {
+      text-align: center;
+      padding: 100px 0;
+    }
+    .motos {
+      padding: 1.625rem;
+      color: #fff;
+      background-color: #0c0c0c;
+    }
+    .motos .mw-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+      align-items: center;
+    }
+    .motos .mw-container p {
+      margin: 0;
+    }
+    .motos .mw-container img {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img src="static/images/logo-rednecks-mcs.png" />
+      </div>
+    </header>
+    <section class="pitch">
+      <div class="mw-container">
+        <p>Nascidos para pilotar</p>
+        <h1>Somos <span>Rednecks M.C.</span></h1>
+      </div>
+    </section>
+    <section class="our-history">
+      <div class="separator"></div>
+      <h2>Nossa história</h2>
+      <div class="mw-container">
+        <p>
+          Antes de começarmos a contar a história dos caipiras e nosso humilde
+          começo em 2012, você pode estar se perguntando o que "caipiras"
+          realmente significa. O termo caipira é na verdade uma palavra
+          brasileira que descreve pessoas do campo, agricultores ou apenas
+          pessoas que vivem no campo. Esta descrição é praticamente o que éramos
+          quando criamos este projeto juntos. Caipiras do asfalto, local onde
+          nossa história começou a ser escrita.
+        </p>
+        <p>
+          Diz-se que todas as boas histórias começam com um bar, a nossa começou
+          numa pastelaria onde as motos de 250cc ficavam ao lado das mesas, mas
+          isso foi só o início, até que três caras tiveram a louca ideia de
+          criar um grupo onde fundiram suas habilidades e o razoável
+          conhecimento sobre duas rodas para trocarem experiência sobre a
+          prática de mecânica e customização.
+        </p>
+        <p>
+          Quando se soube que há uma escassez de mão de obra em toda a cidade, o
+          plano teve início imediato. Como resultado, realizou uma reunião a fim
+          de encontrar uma solução, um local onde as máquinas pudessem estar
+          para pequenas manutenções. A idéia foi rapidamente acordada: eles
+          criariam sua própria sede. E como eles queriam sua própria oficina,
+          não tomaram a rota da praticidade e uniram forças para erguer o local,
+          como elevadores e ferramentas que pegavam até da casa do avô.
+        </p>
+        <p>
+          Eles pensaram que seria divertido se reunir com outras pessoas que
+          gostam das mesmas coisas. Esta idéia foi recebida com grande interesse
+          e o primeiro encontro fora da cidade se seguiu muito em breve. No
+          primeiro evento, a pessoa encarregada de organizar tudo levou 12
+          participantes. Este número aumentou para mais de 300 participantes
+          apenas dois anos depois, tornando-o marcante para todos os envolvidos.
+        </p>
+        <p>
+          Com isso, formaram a primeira facção dos bandidos da caipirinha, hoje
+          conhecidos como "Os Rednecks".
+        </p>
+      </div>
+    </section>
+    <section class="motos">
+      <div class="mw-container">
+        <img src="static/images/motos.png" />
+        <div>
+          <p>
+            Nosso estilo de vida está enraizado nas motos custons. Pegar estrada
+            com a sinfonia do motor V2, o vento soprando em nosso rosto, nos
+            resfriando do calor que emanda do asfalto e a satisfação de pilotar
+            com uma jaqueta dos "Rednecks", não tem preço.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Copyright © 2022 - Rednecks M.C.</p>
+    </footer>
+  </body>
+</html>
