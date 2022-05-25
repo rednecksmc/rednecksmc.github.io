@@ -16,124 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://greghub.github.io/green-audio-player/dist/css/green-audio-player.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="static/styles.css" />
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font: 16px "Noto Serif", "sans-serif", arial;
-      background: url('static/images/pattern.jpg') repeat #F3F4F4;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Arvo", Helvetica, sans-serif;
-    }
-    h2 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #e82626;
-      margin-bottom: 2.5rem;
-    }
-    p {
-      font-size: 1.125rem;
-      margin-bottom: 1.25rem;
-      line-height: 26px;
-    }
-    #header {
-      height: 80px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(4px);
-    }
-    #header .logo {
-      position: absolute;
-      top: 5px;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: all ease 500ms;
-    }
-    #header .logo:hover {
-      transform: translateX(-50%) rotate(-10deg) scale(1.1);
-    }
-    #footer {
-      color: #707070;
-      text-align: center;
-      padding: 40px 0;
-    }
-    #footer p {
-      margin-bottom: 0;
-    }
-    .mw-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-    .pitch {
-      color: #fff;
-      display: flex;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      background: url("static/images/pitch.png") no-repeat center;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-    .pitch .mw-container {
-      flex: 1;
-    }
-    .pitch p {
-      line-height: 1;
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      font-size: 3.625rem;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .pitch h1 {
-      padding: 10px 20px;
-      font-size: 3.625rem;
-      display: inline-block;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .pitch h1 span {
-      color: #e82626;
-    }
-    .separator {
-      background: url("static/images/separator.png") center center no-repeat;
-      height: 56px;
-      margin-bottom: 30px;
-    }
-    .our-history {
-      text-align: center;
-      padding: 100px 0;
-    }
-    .motos {
-      padding: 1.625rem;
-      color: #fff;
-      background-color: #0c0c0c;
-    }
-    .motos .mw-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 50px;
-      align-items: center;
-    }
-    .motos .mw-container p {
-      margin: 0;
-    }
-    .motos .mw-container img {
-      width: 100%;
-    }
-  </style>
   <body>
     <header id="header">
       <div class="logo">
@@ -197,14 +85,50 @@
           <p>
             Nosso estilo de vida está enraizado nas motos custons. Pegar estrada
             com a sinfonia do motor V2, o vento soprando em nosso rosto, nos
-            resfriando do calor que emanda do asfalto e a satisfação de pilotar
+            resfriando do calor que emana do asfalto e a satisfação de pilotar
             com uma jaqueta dos "Rednecks", não tem preço.
           </p>
         </div>
       </div>
     </section>
+    <section class="conscription">
+      <div class="separator"></div>
+      <h2>Recrutamento</h2>
+      <div class="container">
+        <p>
+          Para ser um dos Rednecks não é tão simples. É necessário passar por
+          uma série de provas e demostração de seu carater para conseguir
+          ingressar neste moto clube.
+        </p>
+        <p>
+          Atualmente o recrutamento para os Rednecks está temporariamente
+          fechado.
+        </p>
+        <button class="btn" disabled>Indisponível</button>
+      </div>
+    </section>
     <footer id="footer">
       <p>Copyright © 2022 - Rednecks M.C.</p>
     </footer>
+    <div class="enter-website">
+      <div class="modal-box-message">
+        <h3>Moto clube <span>Rednecks</span></h3>
+        <p>
+          Essa é a porta de entrada dos Rednecks na internet. Você é maior que
+          18 anos?
+        </p>
+        <div class="modal-box-message-actions">
+          <button class="btn primary">Sim</button>
+          <button class="btn">Foda-se</button>
+        </div>
+      </div>
+    </div>
+    <div class="float-container">
+      <div class="audio-player" data-played="1" role="button" tabindex="0">
+        <img src="static/images/pause.svg" alt="audio" />
+      </div>
+    </div>
+    <script src="https://howlerjs.com/assets/howler.js/dist/howler.min.js?v=2.2.3"></script>
+    <script src="static/scripts.js"></script>
   </body>
 </html>
